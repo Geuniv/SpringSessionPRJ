@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: springSession2
+  data: # RedisDB ?? ??
+    redis:
+      host: 192.168.241.128
+      port: 6379
+      username: poly
+      password: 1234
+  session: # SpringSession ??
+    redis:
+      flush-mode: on_save
+
+server: # Session ?? ?? : 600? ( 10? )
+  port: 26000
+  servlet:
+    session:
+      timeout: 10m
