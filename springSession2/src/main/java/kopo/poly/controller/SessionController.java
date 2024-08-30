@@ -22,7 +22,7 @@ public class SessionController {
         String sessionId = session.getId();
 
         // 세션 저장하기
-        session.setAttribute("test", "springSession1 서버에서 저장한 값");
+        session.setAttribute("test", "springSession2 서버에서 저장한 값");
 
         // 세션 가져오기
         String test = CmmUtil.nvl((String) session.getAttribute("test"));
